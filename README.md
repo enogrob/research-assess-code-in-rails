@@ -296,8 +296,7 @@ $ ls -la .*.yml
 -rw-r--r--  1 enogrob  staff  77011 Sep 29 12:55 .rubocop_todo.yml
 ```
 
-Later on ongoing with **RubyCritic** and also with **Rubocop** but on a codereview/refactoring based activities.
-
+Later on ongoing with **RubyCritic** and also with **RuboCop** but on a codereview/refactoring based activities. In this respect **Obras DevTools** can help with hand-on utilities in order to run **RuboCop** or **RubyCritic** just on **git diffs** or **commits**. And also opening their outputs when they are ready.
 ![](images/rubycritic.png)
 
 ---
