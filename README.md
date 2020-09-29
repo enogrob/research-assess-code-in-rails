@@ -15,7 +15,7 @@ Here are some guidelines and articles about this subject.
 
 ---
 
-My suggestion is to use first **Rubocop** in order to cleanup the offenses (see process just below). Later on with **RubyCritic** and also with **Rubocop** but on a codereview/refactoring based activities.
+My suggestion is to use first **Rubocop** in order to cleanup the offenses (see process just below). 
 
 ```
 $ rubocop --format offenses
@@ -295,6 +295,8 @@ $ ls -la .*.yml
 :
 -rw-r--r--  1 enogrob  staff  77011 Sep 29 12:55 .rubocop_todo.yml
 ```
+
+Later on ongoing with **RubyCritic** and also with **Rubocop** but on a codereview/refactoring based activities.
 
 ![](images/rubycritic.png)
 
