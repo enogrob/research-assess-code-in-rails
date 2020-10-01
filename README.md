@@ -11,11 +11,13 @@ Solution Integrator Experienced - Certified by Ericsson
 
 Here are some guidelines and articles about this subject.
 
-![](images/devtools.png)
+![](https://trello-attachments.s3.amazonaws.com/5a747893c91d651e0b738135/5f71abe40570128df4c4b13a/e04c8a4bcc405f546d9f61f194393762/screenshot_258.png)
 
 ---
 
-My suggestion is to use first **Rubocop** in order to cleanup the offenses (see process just below). 
+My suggestion is to use first **Rubocop** in order to cleanup the `offenses` (see process just below).
+
+**Rubocop Cleanup Process**
 
 ```
 $ rubocop --format offenses
@@ -295,9 +297,36 @@ $ ls -la .*.yml
 :
 -rw-r--r--  1 enogrob  staff  77011 Sep 29 12:55 .rubocop_todo.yml
 ```
+Later on ongoing with **RubyCritic** and also with **Rubocop** but on a codereview/refactoring based activities. In this respect **Obras DevTools** can help with hand-on utilities in order to run **Rubocop** or **Rubycritic** just on **git diffs** or **commits**. And also opening their outputs when they are ready.
 
-Later on ongoing with **RubyCritic** and also with **RuboCop** but on a codereview/refactoring based activities. In this respect **Obras DevTools** can help with hand-on utilities in order to run **RuboCop** or **RubyCritic** just on **git diffs** or **commits**. And also opening their outputs when they are ready.
-![](images/rubycritic.png)
+```
+$ git status
+:
+modified:   app/models/access.rb
+modified:   app/models/sector.rb
+
+$ site set rubocop
+$ site set rubycritic
+
+$ site rubocop
+==> Running RuboCop
+
+$ site rubycritic
+==> Running RubyCritic
+running flay smells
+:
+Score: 78.99
+```
+
+![](images/devtools.png)
+
+---
+
+![](images/rubocop.png)
+
+---
+
+![](images/rubycritic_report.png)
 
 ---
 
@@ -310,4 +339,3 @@ Later on ongoing with **RubyCritic** and also with **RuboCop** but on a coderevi
 * [5] [**rubocop**](https://github.com/rubocop-hq/rubocop)
 * [6] [**rubocop-rails**](https://github.com/rubocop-hq/rubocop-rails/)
 * [7] [**Rubocop’s --auto-gen-config**](https://leonelgalan.com/2020/02/26/rubocops-auto-gen-config.html)
-
